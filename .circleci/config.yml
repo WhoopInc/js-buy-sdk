@@ -24,7 +24,8 @@ jobs:
       - javascript/bump-package-version:
           base_package_version: "2.20"
 
-      - javascript/publish
+      - javascript/publish:
+          use_legacy_nexus_auth: true
 
 workflows:
   build_and_test:
